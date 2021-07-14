@@ -73,11 +73,12 @@ img {
     padding: 2px 10px;
     /*border: 1px solid#F2DF80;*/
     color:#A63247;
+    font-size: 24px;
     font-family: 'PT Serif', serif;
 }
 
 #main_gnb>ul>li>a:hover {
-    background-color:#A63247;
+    /*background-color:#A63247;*/
     color: #F2DF80;
 }
 
