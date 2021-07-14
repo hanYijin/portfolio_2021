@@ -11,9 +11,7 @@
 
 #main_section>article.main_article{
     margin-bottom: 10px;
-    padding: 100px;
-    
-    
+    padding: 100px;   
 }
 #main_section>article.main_article>h1{
     font-size: 30px;
