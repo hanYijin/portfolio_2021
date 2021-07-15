@@ -34,10 +34,15 @@
     
   }
   .middle-left-2{
-    top:20px;
+    position: absolute;
+    top:420px;
+    left: 50px;
     width: 300px;
     height: 500px;
-    
+  }
+  .middle-left-2>p{
+    text-align: left;
+    font-size: 14px;
   }
   .middle-right{
     position: absolute;
