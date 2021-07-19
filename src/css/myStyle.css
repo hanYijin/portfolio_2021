@@ -118,7 +118,38 @@ img {
 #main_lnb>ul>li:last-child>a {
     border-radius: 0px 10px 10px 0px;
 }
+/* side navber */
+body {font-family: "Lato", sans-serif;}
+        
+.sidebar {
+  height: 100%;
+  width: 260px;
+  position: fixed;
+  z-index: 1;
+  top: 200px;
+  left: 20px;
+  /* background-color: whitesmoke; */
+  overflow-x: hidden;
+  padding-top: 16px;
+  
+}
 
+.sidebar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+}
+
+.sidebar a:hover {
+  /* color: #f1f1f1; */
+  color: #A67C49;
+}
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 10px;}
+  .sidebar a {font-size: 25px;}
+}
 .item{
     overflow: hidden;
     padding: 10px;
