@@ -33,56 +33,7 @@
   
 </head>
 <body>
-  <script type="text/javascript">
-  $(document).ready(function (){
-  var target = $('.target');
-  var zoom = target.data('zoom');
-
-  $(".wrap")
-    .on('mousemove', magnify)
-    .prepend("<div class='magnifier'></div>")
-    .children('.magnifier').css({
-    "background": "url('" + target.attr("src") + "') no-repeat",
-    "background-size": target.width() * zoom + "px " + target.height() * zoom+ "px"
-  });
-
-  var magnifier = $('.magnifier');
-
-  function magnify(e) {
-
-    // 마우스 위치에서 .magnify의 위치를 차감해 컨테이너에 대한 마우스 좌표를 얻는다.
-    var mouseX = e.pageX - $(this).offset().left;
-    var mouseY = e.pageY - $(this).offset().top;
-
-    // 컨테이너 밖으로 마우스가 벗어나면 돋보기를 없앤다.
-    if (mouseX < $(this).width() && mouseY < $(this).height() && mouseX > 0 && mouseY > 0) {
-      magnifier.fadeIn(100);
-    } else {
-      magnifier.fadeOut(100);
-    }
-
-    //돋보기가 존재할 때
-    if (magnifier.is(":visible")) {
-
-      // 마우스 좌표 확대될 이미지 좌표를 일치시킨다.
-      var rx = -(mouseX * zoom - magnifier.width() /2 );
-      var ry = -(mouseY * zoom - magnifier.height() /2 );
-
-      //돋보기를 마우스 위치에 따라 움직인다.
-      //돋보기의 width, height 절반을 마우스 좌표에서 차감해 마우스와 돋보기 위치를 일치시킨다.
-      var px = mouseX - magnifier.width() / 2;
-      var py = mouseY - magnifier.height() / 2;
-
-      //적용
-      magnifier.css({
-        left: px,
-        top: py,
-        backgroundPosition: rx + "px " + ry + "px"
-      });
-    }
-  }
-});
-  </script>
+  <script type="text/javascript" src="src/js/zoom.js"></script>
     <header id="main_header">
         <div id="title">
             <h1><a href="index.html">Portfolio</a></h1>
@@ -301,23 +252,23 @@
                 <br><br>
                 <div style="margin-top:500px;"></div>
                 <br><img class="target" data-zoom="3" src="res/book/슬라이드0001.PNG" alt="">
-                <br><img src="res/book/슬라이드0002.PNG" alt="">
-                <br><img src="res/book/슬라이드0003.PNG" alt="">
-                <br><img src="res/book/슬라이드0004.PNG" alt="">
-                <br><img src="res/book/슬라이드0005.PNG" alt="">
-                <br><img src="res/book/슬라이드0006.PNG" alt="">
-                <br><img src="res/book/슬라이드0007.PNG" alt="">
-                <br><img src="res/book/슬라이드0008.PNG" alt="">
-                <br><img src="res/book/슬라이드0009.PNG" alt="">
-                <br><img src="res/book/슬라이드0010.PNG" alt="">
-                <br><img src="res/book/슬라이드0011.PNG" alt="">
-                <br><img src="res/book/슬라이드0012.PNG" alt="">
-                <br><img src="res/book/슬라이드0013.PNG" alt="">
-                <br><img src="res/book/슬라이드0014.PNG" alt="">
-                <br><img src="res/book/슬라이드0015.PNG" alt="">
-                <br><img src="res/book/슬라이드0016.PNG" alt="">
-                <br><img src="res/book/슬라이드0017.PNG" alt="">
-                <br><img src="res/book/슬라이드0018.PNG" alt="">
+                <br><img src="./res/book/슬라이드0002.PNG" alt="">
+                <br><img src="./res/book/슬라이드0003.PNG" alt="">
+                <br><img src="./res/book/슬라이드0004.PNG" alt="">
+                <br><img src="./res/book/슬라이드0005.PNG" alt="">
+                <br><img src="./res/book/슬라이드0006.PNG" alt="">
+                <br><img src="./res/book/슬라이드0007.PNG" alt="">
+                <br><img src="./res/book/슬라이드0008.PNG" alt="">
+                <br><img src="./res/book/슬라이드0009.PNG" alt="">
+                <br><img src="./res/book/슬라이드0010.PNG" alt="">
+                <br><img src="./res/book/슬라이드0011.PNG" alt="">
+                <br><img src="./res/book/슬라이드0012.PNG" alt="">
+                <br><img src="./res/book/슬라이드0013.PNG" alt="">
+                <br><img src="./res/book/슬라이드0014.PNG" alt="">
+                <br><img src="./res/book/슬라이드0015.PNG" alt="">
+                <br><img src="./res/book/슬라이드0016.PNG" alt="">
+                <br><img src="./res/book/슬라이드0017.PNG" alt="">
+                <br><img src="./res/book/슬라이드0018.PNG" alt="">
             </article>
         </section>
     </div>
