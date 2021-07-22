@@ -1,0 +1,90 @@
+*{
+    margin: 0px;
+    padding: 0px;
+  }
+  .container{
+    width: 1000px;
+    margin: 0 auto;
+  }
+  .container div{
+    text-align: center;
+    display: table;
+  }
+  .container div span{
+    display: table-cell;
+    vertical-align: middle;
+  }
+  .top{
+    margin-top: 50px;
+    width: 1000px;
+    height: 80px;
+    display: table;
+  }
+  .middle{
+    margin-top: 0px;
+    width: 1000px;
+    height: 1500px;
+    position: relative;
+  }
+  .middle-left{
+    position: absolute;
+    top: 50px;
+    width: 400px;
+    height: 500px;
+    
+  }
+  .middle-left-2{
+    position: absolute;
+    top:420px;
+    left: 50px;
+    width: 300px;
+    height: 500px;
+  }
+  .middle-left-2>p{
+    text-align: left;
+    font-size: 14px;
+  }
+  .middle-right{
+    position: absolute;
+    top: 50px;
+    left: 400px;
+    width: 600px;
+    height: 500px;
+  }
+  .middle-right>p{
+    text-align: left;
+  }
+  .middle-right-1{
+    width: 380px;
+    height: 150px;
+   
+  }
+  .middle-right-2{
+    margin-top: 10px;
+    width: 380px;
+    height: 150px;
+    
+  }
+  .middle-right-3{
+    margin-top: 10px;
+    width: 380px;
+    height: 180px;
+    
+  }
+  .bottom{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 1000px;
+    height: 100px;
+    
+  }
+  @font-face {
+    font-family: '본문';
+    src: url('..\res\NanumBarunGothic.ttf'),url('..\res\NanumBarunGothicUltraLight.ttf'),url('..\res\co-web/NanumBarunGothicLight.ttf'),url('..\res\co-web/NanumBarunGothicBold.ttf');
+}
+h1 h2 h3{
+    font-family: '본문';
+}
+p{
+    font-family: '본문';
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HANYIJIN_PORTFOLIO</title>
+    <link rel="stylesheet" href="src/css/contents.css">
+    <link rel="stylesheet" href="src/css/myStyle.css">
+    <link rel="stylesheet" href="src/css/project.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Benne&family=Lora:ital,wght@0,600;0,700;1,600&family=Raleway:ital,wght@1,600&family=Roboto&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Benne&family=PT+Serif&display=swap" rel="stylesheet">
+    <!--<link rel="stylesheet" href="eric.css">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        b{
+            color:#F2D544;
+        }
+    </style>
+</head>
+<body>
+    <script type="text/javascript" src="src/js/project.js"></script>
+    <header id="main_header">
+        <div id="title">
+            <h1><a href="index.html">Portfolio</a></h1>
+        </div>
+        <nav id="main_lnb">
+            <ul>
+                <li><a href="01_about.html">About Me</a></li>
+                <li><a href="02_project.html">Project</a></li>
+                <li><a href="03_고전미술.html">Challenge</a></li>
+                <li><a href="artfair\han.html">Bang_Gu_Seok ArtFair</a></li>
+                <li><a href="05_my challenge.html">My Stroy</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="contents">
+        <div class="sidebar">
+            <a href="#home"onclick="window.scrollTo(0,0);">Go To Top</a>
+            <a href="03_lotto.html"> C programming</a>
+            <a href="04_medi.html"> JAVA programming</a>
+            <a href="05_covid.html"> JSP Project</a>
+            <a href="06_Book.html"> C# Project</a>
+          </div>
+        <section id="main_section">
+            <article class="backimg_article1">
+                <div style="margin-top: 100px;"></div>
+                <figure class="snip1283">
+                    <img src="res/lotto/슬라이드1.PNG" width="960px"alt="lotto"/>
+                    <figcaption>
+                      <h3>"로또 당첨! 인생 역전 열차"</h3>
+                      <p><b style="color: #F2D544;">C 언어</b>와 <b style="color: #F2D544;">베이즈 확률론</b> 기반으로 로또 당첨 확률을 높이는 번호 추출하는 프로그램 제작</p>
+                      <p>헤더파일 <stdlib.h>의 난수함수, 시스템 시간을 seed값으로 주어지는 Srand 난수함수 사용</p>
+                      <P>최근 50회의 누적된 당첨번호를 통계적 확률로 분석하여 이를 조건하에 난수 생성</P>
+                      <p>출현 빈도수에 대한 당첨 확률 수치화하여 사용자 판단을 도와주는 프로그램</p>
+                      <a href="03_lotto.html" class="read-more">Read More</a>
+                    </figcaption>
+                </figure> 
+                <div style="margin-top: 100px;"></div>
+                <figure class="snip1283">
+                    <img src="res/medi/medi1.PNG" width="960px"alt="medi"/>
+                    <figcaption>
+                      <h3>"나 혼자 약 산다"</h3>
+                      <p>코로나 확산으로 인한 비대면 시대, 1인 가구, 노년층 증가</p> 
+                      <p>혼자 아픈 것도 서러운데 아픈 몸 이끌고 약국행 NO!</p>
+                      <p>상비 약품 배달 서비스 플랫폼</p>
+                      <p><b style="color: #F2D544;">JAVA, Swing, Oracle 기반의 프로그램</b></p>
+                      <a href="04_medi.html" class="read-more">Read More</a>
+                    </figcaption>
+                </figure>   
+                <div style="margin-top: 100px;"></div>
+                <figure class="snip1283">
+                    <img src="res/covid/슬라이드0001.png" width="960px"alt="covid"/>
+                    <figcaption>
+                      <h3>"COVID-19"</h3>
+                      <p>실시간 확진현황, 백신예방접종센터 등 코로나에 관한 정보 제공 Web Application</p> 
+                      <p>코로나로 힘든 국민의 의견을 담는 게시판 구현과 설문조사를 통해 사용자와의 소통</p>
+                      <p><b>JSP</b>, Apache Tomcat server 연동한 web application</p>
+                      <p><b>Python</b>으로 데이터 수집, <b>MySQL(RDBMS)</b> 연동하여 데이터 관리</p>
+                      <p><b>Ajax / D3.js / Crawling</b>, 각종 라이브러리 기능 사용</p>
+                      <a href="05_covid.html" class="read-more">Read More</a>
+                    </figcaption>
+                </figure>  
+                <div style="margin-top: 100px;"></div>
+                <figure class="snip1283">
+                    <img src="res/book/슬라이드0001.png" width="960px"alt="book"/>
+                    <figcaption>
+                      <h3>"도서관리 프로그램"</h3>
+                      <p>도서관 이용자와 도서 관리자를 위한 <b>C# (.NET Framework)</b>기반 프로그램 </p> 
+                      <p><b>MsSQL</b>을 연동한 도서 데이터 관리</p>
+                      <p><b>Open API</b>를 이용한 인기 도서 상세 정보, 지역 도서관 위치 정보 제공</p>
+                      <a href="06_Book.html" class="read-more">Read More</a>
+                    </figcaption>
+                </figure>              
+            </article>
+        </section>
+    </div>
+    <footer id="main_footer">
+        <h2>HanYijin</h2>
+        <div style="margin-top: 15px;"></div> 
+        <a href="https://github.com/hanYijin" style="margin-right:5px;"><img src="res/github-logo.png"></a>
+        <a href="https://m.blog.naver.com/PostList.naver?blogId=gksdlwls123" style="margin-left:5px; margin-right:5px;"><img src="res/blog.png" width="32px"></a>
+        <a href="https://www.instagram.com/yijin_han" style="margin-left:5px;"><img src="res/instagram.png"></a>
+        <div style="margin-top: 10px;"></div> 
+        <p>010-9982-7993</p>
+        <address>gksdlwls123@naver.com</address>
+    </footer>
+
+</body>
+
+</html>
