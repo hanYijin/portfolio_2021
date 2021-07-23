@@ -1,24 +1,110 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome</title>
-    <link rel="stylesheet" href="src/css/index.css">
-    <!--<script src="src/js/index.js"></script> -->
+    <title>HANYIJIN_PORTFOLIO</title>
+    <link rel="stylesheet" href="src/css/open.css">
+    <link rel="stylesheet" href="src/css/myStyle.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Benne&family=Lora:ital,wght@0,600;0,700;1,600&family=Raleway:ital,wght@1,600&family=Roboto&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Benne&family=PT+Serif&display=swap" rel="stylesheet">
+    <!--<link rel="stylesheet" href="eric.css">-->
+    <style>
+        html,
+        body {
+            margin: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+        }
+
+        .img-door {
+            position: relative;
+            width: 500px;
+            height: 650px;
+        }
+         .img.content{
+            position: absolute;
+            font-size:48px;
+            /*transform: translate(-50%, -50%);                                                                   
+            font-size:5rem;
+            color: white;
+            z-index: 2;
+            top:40px;
+            left:80px;
+            text-align: center;
+            */
+         }
+    </style>
 </head>
 
 <body>
-    <div class="container">
-        <a id="Lee" href="src/Lee_00.html">
-            <img src="res/artscience_science.png" class="mainImage" alt="">
-        </a>
-        <a id="Han" href="src/han.html">
-            <img src="res/artscience_art.png" class="mainImage" alt="">
-        </a>
+    <header id="main_header">
+        <div id="title">
+            <h1><a href="index.html">Portfolio</a></h1>
+        </div>
+        <nav id="main_lnb">
+            <ul>
+                <li><a href="01_about.html">About Me</a></li>
+                <li><a href="02_project.html">Project</a></li>
+                <li><a href="03_고전미술.html">Challenge</a></li>
+                <li><a href="artfair\han.html">Bang_Gu_Seok ArtFair</a></li>
+                <li><a href="05_my challenge.html">My Stroy</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="contents">
+        <section id="main_section">
+            <div class="container">
+                    <img onclick="javascript:location.href='01_about.html'"
+                        style="cursor: pointer;" class="img-door"
+                        src="res/한이진 디테일1.JPG" 
+                        onmouseenter="zoomIn(event)"
+                        onmouseleave="zoomOut(event)"/>
+                <div class="content">
+                    <h1 style="font-size:64px; color:#8C0303;">About Me?</h1>
+                    <h2 style="font-size:52px; color:#F2D544;">Click Me!!</h2>
+                </div>     
+            </div>
+        </section>
     </div>
+    <script>
+        function zoomIn(event) {
+            event.target.style.width = "700px";
+            event.target.style.height = "850px";
+            event.target.style.transition = "all 0.5s";
+        }
+
+        function zoomOut(event) {
+            event.target.style.width = "500px";
+            event.target.style.height = "650px";
+            event.target.style.transition = "all 0.5s";
+        }
+    </script>
+    <footer id="main_footer">
+        <h2>HanYijin</h2>
+        <div style="margin-top: 15px;"></div> 
+        <a href="https://github.com/hanYijin" style="margin-right:5px;"><img src="res/github-logo.png"></a>
+        <a href="https://m.blog.naver.com/PostList.naver?blogId=gksdlwls123" style="margin-left:5px; margin-right:5px;"><img src="res/blog.png" width="32px"></a>
+        <a href="https://www.instagram.com/yijin_han" style="margin-left:5px;"><img src="res/instagram.png"></a>
+        <div style="margin-top: 10px;"></div> 
+        <p>010-9982-7993</p>
+        <address>gksdlwls123@naver.com</address>
+    </footer>
 </body>
 
 </html>
