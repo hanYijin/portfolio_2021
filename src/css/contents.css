@@ -70,9 +70,14 @@ button {
 }
 
 a {
-    color: black
+    color: #3B9ABF;
+    background-color: white;
+	display: block; /* 인라인모드/블럭모드 이해 필요  */
+	text-align: center;
 }
-
+a:hover{
+    color: #A63247;
+}
 button:active,
 button:hover,
 button:focus {
