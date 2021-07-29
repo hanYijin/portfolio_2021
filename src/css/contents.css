@@ -72,7 +72,6 @@ button {
 a {
     color: #3B9ABF;
 	/* display: block; 인라인모드/블럭모드 이해 필요  */
-	text-align: center;
 }
 a:hover{
     color: #A63247;
